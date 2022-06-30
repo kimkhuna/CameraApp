@@ -13,6 +13,7 @@
 		6CADC470283A2AC100723D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CADC46E283A2AC100723D10 /* Main.storyboard */; };
 		6CADC472283A2AC300723D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CADC471283A2AC300723D10 /* Assets.xcassets */; };
 		6CADC475283A2AC300723D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CADC473283A2AC300723D10 /* LaunchScreen.storyboard */; };
+		6CB5324F286DE11700A5A26D /* EF_Diary.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CB5324E286DE11700A5A26D /* EF_Diary.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6CADC471283A2AC300723D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CADC474283A2AC300723D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CADC476283A2AC300723D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB5324E286DE11700A5A26D /* EF_Diary.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EF_Diary.ttf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		6CADC467283A2AC100723D10 /* CameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				6CB5324D286DE0FC00A5A26D /* Resource */,
 				6CADC468283A2AC100723D10 /* AppDelegate.swift */,
 				6CADC46A283A2AC100723D10 /* SceneDelegate.swift */,
 				6CADC46C283A2AC100723D10 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				6CADC476283A2AC300723D10 /* Info.plist */,
 			);
 			path = CameraApp;
+			sourceTree = "<group>";
+		};
+		6CB5324D286DE0FC00A5A26D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6CB5324E286DE11700A5A26D /* EF_Diary.ttf */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +139,7 @@
 				6CADC475283A2AC300723D10 /* LaunchScreen.storyboard in Resources */,
 				6CADC472283A2AC300723D10 /* Assets.xcassets in Resources */,
 				6CADC470283A2AC100723D10 /* Main.storyboard in Resources */,
+				6CB5324F286DE11700A5A26D /* EF_Diary.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
