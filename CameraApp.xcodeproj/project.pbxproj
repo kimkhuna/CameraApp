@@ -14,6 +14,7 @@
 		6CADC472283A2AC300723D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CADC471283A2AC300723D10 /* Assets.xcassets */; };
 		6CADC475283A2AC300723D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CADC473283A2AC300723D10 /* LaunchScreen.storyboard */; };
 		6CB5324F286DE11700A5A26D /* EF_Diary.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CB5324E286DE11700A5A26D /* EF_Diary.ttf */; };
+		6CFBD1FD2871AB2100416184 /* BSImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 6CFBD1FC2871AB2100416184 /* BSImagePicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,7 @@
 		6CADC471283A2AC300723D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CADC474283A2AC300723D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CADC476283A2AC300723D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CB5324E286DE11700A5A26D /* EF_Diary.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EF_Diary.ttf; sourceTree = SOURCE_ROOT; };
+		6CB5324E286DE11700A5A26D /* EF_Diary.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EF_Diary.ttf; path = CameraApp/Resource/Fonts/EF_Diary.ttf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFBD1FD2871AB2100416184 /* BSImagePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +75,17 @@
 		6CB5324D286DE0FC00A5A26D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				6CB5324E286DE11700A5A26D /* EF_Diary.ttf */,
+				6CB53250286DEDA500A5A26D /* Fonts */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		6CB53250286DEDA500A5A26D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6CB5324E286DE11700A5A26D /* EF_Diary.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +104,9 @@
 			dependencies = (
 			);
 			name = CameraApp;
+			packageProductDependencies = (
+				6CFBD1FC2871AB2100416184 /* BSImagePicker */,
+			);
 			productName = CameraApp;
 			productReference = 6CADC465283A2AC100723D10 /* CameraApp.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 6CADC45C283A2AC100723D10;
+			packageReferences = (
+				6CFBD1FB2871AB2100416184 /* XCRemoteSwiftPackageReference "BSImagePicker" */,
+			);
 			productRefGroup = 6CADC466283A2AC100723D10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CFBD1FB2871AB2100416184 /* XCRemoteSwiftPackageReference "BSImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mikaoj/BSImagePicker.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CFBD1FC2871AB2100416184 /* BSImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CFBD1FB2871AB2100416184 /* XCRemoteSwiftPackageReference "BSImagePicker" */;
+			productName = BSImagePicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CADC45D283A2AC100723D10 /* Project object */;
 }
